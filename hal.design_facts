@@ -2,7 +2,7 @@ halstruct(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
 
 
 
-Design facts for top module: pipe2_test
+Design facts for top module: tb_parking_system
 -----------------------------------------
 
   1. Primary inputs used as flip-flop
@@ -22,8 +22,7 @@ Design facts for top module: pipe2_test
                                             Number Of single-bit
      Internal signal                  : Flipflops/latches controlled
      -------------                      ----------------------------
-     pipe2_test.MYPIPE.clk2           : 4124 FFs
-     pipe2_test.MYPIPE.clk1           : 328 FFs
+     tb_parking_system.uut.clk        : 51 FFs
 
   4. Primary inputs used as async
      set/reset
@@ -34,6 +33,7 @@ Design facts for top module: pipe2_test
 
      Internally generated signals used as async
      set/reset
+     tb_parking_system.uut.reset_n
 
   5. Clock-Reset Generators :
 
@@ -51,8 +51,8 @@ Design facts for the complete design:
 
   1. Number of tops in hierarchy : 1
 
-  2. Number of single-bit flip-flops in hierarchy : 0
-    -- (i)  Number of single-bit D flip-flops in hierarchy : 0
+  2. Number of single-bit flip-flops in hierarchy : 51
+    -- (i)  Number of single-bit D flip-flops in hierarchy : 51
     -- (ii) Number of single-bit JK flip-flops in hierarchy : 0
 
   3. Number of single-bit latches in hierarchy : 0
