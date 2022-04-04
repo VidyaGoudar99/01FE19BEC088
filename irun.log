@@ -1,103 +1,320 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 14, 2022 at 11:58:01 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 19, 2022 at 10:55:31 IST
 irun
 	-access +rwc
-	ramtb.v
-Recompiling... reason: file './ramtb.v' is newer than expected.
-	expected: Mon Mar 14 12:06:06 2022
-	actual:   Mon Mar 14 12:07:05 2022
-file: ramtb.v
-	module worklib.ramtb:v
+	pipe_tb.v
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+irun: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+irun: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+irun: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+irun: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+irun: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+ncvlog: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+ncvlog: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+ncvlog: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+ncvlog: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+ncvlog: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+ncvlog: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+ncvlog: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+ncvlog: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
+file: pipe_tb.v
+	module worklib.pipe_tb:v
 		errors: 0, warnings: 0
-	module worklib.ram_3:v
-		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 8
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+irun: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+irun: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+irun: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+irun: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+ncelab: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+ncelab: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+ncelab: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+ncelab: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+ncelab: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+ncelab: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+ncelab: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+ncelab: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		ramtb
+		pipe_tb
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.ram_3:v <0x57151ace>
-			streams:   2, words:   606
-		worklib.ramtb:v <0x78195ed0>
-			streams:   5, words:  4715
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+ncvlog_cg: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+ncvlog_cg: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+ncvlog_cg: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+ncvlog_cg: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+ncvlog_cg: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+ncvlog_cg: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+ncvlog_cg: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+ncvlog_cg: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
+		worklib.pipe_ex:v <0x72521d2c>
+			streams:   9, words:  3174
+		worklib.pipe_tb:v <0x450426ef>
+			streams:  10, words:  7624
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		             Instances  Unique
-		Modules:             2       2
-		Registers:           8       8
-		Scalar wires:        2       -
-		Vectored wires:      3       -
-		Always blocks:       1       1
-		Initial blocks:      1       1
-		Cont. assignments:   1       1
-		Pseudo assignments:  4       4
-	Writing initial simulation snapshot: worklib.ramtb:v
-Loading snapshot worklib.ramtb:v .................... Done
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           11      11
+		Scalar wires:         1       -
+		Vectored wires:       5       -
+		Always blocks:        4       4
+		Initial blocks:       3       3
+		Cont. assignments:    0       1
+		Pseudo assignments:   5       5
+	Writing initial simulation snapshot: worklib.pipe_tb:v
+INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
+|
+ncsim: *W,DLCVAR (/home/adld27/cds.lib,6): cds.lib Invalid environment variable ''.
+DEFINE CALIBRE_HOME     /cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34
+|
+ncsim: *W,DLCPTH (/home/adld27/cds.lib,13): cds.lib Invalid path '/cad_area/vlsi/tools/MENTOR/calibre/aoi_cal_2018.2_41.34' (cds.lib command ignored).
+DEFINE UMC_18_CMOS /cad_area/install/pdk/Cadence_PDK/UMC180FDK/Cadence_IC6/G-9FD-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_UM180FDKMFC00000OA-FDK-Ver.A02_PB.zip_FILES/UM180FDKMFC00000OA_A02_DESIGNKIT.tar.gz_FILES/UM180FDKMFC00000OA_A02_PB.tar.gz_FILES/UMC_18_CMOS/
+|
+ncsim: *W,DLCLAP (/home/adld27/cds.lib,28): cds.lib Same file has different definitions for library 'library UMC_18_CMOS from /home/adld27/cds.lib line 28, redefines
+    library UMC_18_CMOS from same file line 27 defined earlier.' (continuing with last specified path).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday
+|
+ncsim: *W,DLCPTH (/home/adld27/cds.lib,34): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday' (cds.lib command ignored).
+DEFINE UMC180Faraday    /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef
+|
+ncsim: *W,DLCPTH (/home/adld27/cds.lib,35): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/BackEnd/lef' (cds.lib command ignored).
+DEFINE FSA0M_A_50VT_GENERIC_IO /cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO
+|
+ncsim: *W,DLCPTH (/home/adld27/cds.lib,37): cds.lib Invalid path '/cad_area/install/pdk/UMC/UMC180Faraday/fsa0m_a/2008Q3v1.2/50VT_GENERIC_IO/FrontEnd/composer/FSA0M_A_50VT_GENERIC_IO' (cds.lib command ignored).
+DEFINE asap7_TechLib $PDK_DIR/cdslib/asap7_TechLib
+|
+ncsim: *W,DLCVAR (/home/adld27/cds.lib,42): cds.lib Invalid environment variable ''.
+DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
+|
+ncsim: *W,DLCVAR (/home/adld27/cds.lib,67): cds.lib Invalid environment variable ''.
+Loading snapshot worklib.pipe_tb:v .................... Done
 ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
 ncsim> run
-Address1:    0,Data1:   0
-Address1:    1,Data1:   2
-Address1:    2,Data1:   4
-Address1:    3,Data1:   6
-Address1:    4,Data1:   8
-Address1:    5,Data1:  10
-Address1:    6,Data1:  12
-Address1:    7,Data1:  14
-Address1:    8,Data1:  16
-Address1:    9,Data1:  18
-Address1:   10,Data1:  20
-Address1:   11,Data1:  22
-Address1:   12,Data1:  24
-Address1:   13,Data1:  26
-Address1:   14,Data1:  28
-Address1:   15,Data1:  30
-Address1:   16,Data1:  32
-Address1:   17,Data1:  34
-Address1:   18,Data1:  36
-Address1:   19,Data1:  38
-Address1:   20,Data1:  40
-Address1:   21,Data1:  42
-Address1:   22,Data1:  44
-Address1:   23,Data1:  46
-Address1:   24,Data1:  48
-Address1:   25,Data1:  50
-Address1:   26,Data1:  52
-Address1:   27,Data1:  54
-Address1:   28,Data1:  56
-Address1:   29,Data1:  58
-Address1:   30,Data1:  60
-Address1:   31,Data1:  62
-Address1:   32,Data1:  64
-Address1:   33,Data1:  66
-Address1:   34,Data1:  68
-Address1:   35,Data1:  70
-Address1:   36,Data1:  72
-Address1:   37,Data1:  74
-Address1:   38,Data1:  76
-Address1:   39,Data1:  78
-Address1:   40,Data1:  80
-Address1:   41,Data1:  82
-Address1:   42,Data1:  84
-Address1:   43,Data1:  86
-Address1:   44,Data1:  88
-Address1:   45,Data1:  90
-Address1:   46,Data1:  92
-Address1:   47,Data1:  94
-Address1:   48,Data1:  96
-Address1:   49,Data1:  98
-Address1:   50,Data1: 100
-Address2:    0,Data2: 100
-Address2:    0,Data2: 100
-Address2:    0,Data2: 100
-Address2:    0,Data2: 100
-Address2:    0,Data2: 100
-Address2:    0,Data2: 100
-Address2:    0,Data2: 100
-Address2:    0,Data2: 100
-Address2:    0,Data2: 100
-Address2:    0,Data2: 100
-ncsim: *W,RNQUIE: Simulation is complete.
+Time:                   0, F=   x
+Time:                  56, F=  75
+Time:                  76, F=  66
+Time:                  96, F= 112
+Time:                 116, F=  62
+Simulation complete via $finish(1) at time 300 NS + 0
+./pipe_tb.v:25 #300 $finish;
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 14, 2022 at 11:58:02 IST  (total: 00:00:01)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 19, 2022 at 10:55:41 IST  (total: 00:00:10)
