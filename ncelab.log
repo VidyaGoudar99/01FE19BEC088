@@ -1,3 +1,6 @@
 ncelab(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-ncelab: Memory Usage - 49.9M program + 32.2M data = 82.2M total (Peak 87.1M)
-ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.4s, 11.6% cpu)
+ncelab: *E,MTOMDU: More than one unit matches 'worklib.ramtb': 
+	module worklib.ramtb:v (VST)
+	module worklib.ramtb:module (VST).
+ncelab: Memory Usage - 49.9M program + 25.6M data = 75.6M total (Peak 75.6M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 51.8% cpu)
