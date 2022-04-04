@@ -1,20 +1,20 @@
 # DO NOT EDIT -- automatically generated design data file -- DO NOT EDIT!!!
 list \
-workdir {/home/adld27/sam/GCD} \
-cdslib {/home/adld27/sam/GCD/cds.lib} \
+workdir {/home/adld11/vardhan/HalfAdder} \
+cdslib {} \
 worklib {worklib} \
 mode {0} \
 filters {*.v *.vhd *.vhdl} \
 sesslist {} \
 ToolOption_NCVhdl {-logfile ncvhdl.log -errormax 15 -update -linedebug -status} \
-ToolOption_NCVlog { -work worklib -cdslib /home/adld27/sam/GCD/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
-ToolOption_NCVlog/AMS { -work worklib -cdslib /home/adld27/sam/GCD/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
-ToolOption_NCVlog/SV { -work worklib -cdslib /home/adld27/sam/GCD/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog { -work worklib -cdslib /home/adld11/vardhan/HalfAdder/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/AMS { -work worklib -cdslib /home/adld11/vardhan/HalfAdder/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/SV { -work worklib -cdslib /home/adld11/vardhan/HalfAdder/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
 ToolOption_irun {-gui {} +linedebug +access rwc -q} \
-ToolOption_NCElab { -work worklib -cdslib /home/adld27/sam/GCD/cds.lib -logfile ncelab.log -errormax 15 -access +wc -status} \
-ToolOption_NCSim { -gui -cdslib /home/adld25/srff_fold/cds.lib -logfile ncsim.log -errormax 15 -status} \
+ToolOption_NCElab { -work worklib -cdslib /home/adld11/vardhan/HalfAdder/cds.lib -logfile ncelab.log -errormax 15 -access +wc -status} \
+ToolOption_NCSim { -gui -cdslib /home/adld11/vardhan/HalfAdder/cds.lib -logfile ncsim.log -errormax 15 -status} \
 ToolOption_NCSdfc {-logfile ncsdfc.log -compile -status} \
-ToolOption_HAL { -logfile hal.log -cdslib /home/adld25/srff_fold/cds.lib} \
+ToolOption_HAL {-logfile hal.log} \
 ToolOption_SimVision {} \
 ToolOption_Update {-errormax 15 -force} \
 ToolOption_SimCompare {} \
@@ -25,14 +25,14 @@ ToolOption_NCProtect {-logfile ncprotect.log} \
 ToolOption_NCDC {-logfile ncdc.log -messages -status} \
 ToolOption_DBUtil {} \
 ToolOption_NCVhdl {-logfile ncvhdl.log -errormax 15 -update -linedebug -status} \
-ToolOption_NCVlog { -work worklib -cdslib /home/adld27/sam/GCD/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
-ToolOption_NCVlog/AMS { -work worklib -cdslib /home/adld27/sam/GCD/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
-ToolOption_NCVlog/SV { -work worklib -cdslib /home/adld27/sam/GCD/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog { -work worklib -cdslib /home/adld11/vardhan/HalfAdder/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/AMS { -work worklib -cdslib /home/adld11/vardhan/HalfAdder/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/SV { -work worklib -cdslib /home/adld11/vardhan/HalfAdder/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
 ToolOption_irun {-gui {} +linedebug +access rwc -q} \
-ToolOption_NCElab { -work worklib -cdslib /home/adld27/sam/GCD/cds.lib -logfile ncelab.log -errormax 15 -access +wc -status} \
-ToolOption_NCSim { -gui -cdslib /home/adld25/srff_fold/cds.lib -logfile ncsim.log -errormax 15 -status} \
+ToolOption_NCElab { -work worklib -cdslib /home/adld11/vardhan/HalfAdder/cds.lib -logfile ncelab.log -errormax 15 -access +wc -status} \
+ToolOption_NCSim { -gui -cdslib /home/adld11/vardhan/HalfAdder/cds.lib -logfile ncsim.log -errormax 15 -status} \
 ToolOption_NCSdfc {-logfile ncsdfc.log -compile -status} \
-ToolOption_HAL { -logfile hal.log -cdslib /home/adld25/srff_fold/cds.lib} \
+ToolOption_HAL {-logfile hal.log} \
 ToolOption_SimVision {} \
 ToolOption_Update {-errormax 15 -force} \
 ToolOption_SimCompare {} \
