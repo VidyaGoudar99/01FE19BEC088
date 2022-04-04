@@ -1,0 +1,89 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 26, 2022 at 10:45:04 IST
+irun
+	-access +rwc
+	Assignment_tb.v
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+irun: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+irun: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+irun: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+irun: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+Recompiling... reason: file './Assignment_tb.v' is newer than expected.
+	expected: Sat Mar 26 10:07:58 2022
+	actual:   Sat Mar 26 10:09:21 2022
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+irun: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+ncvlog: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+file: Assignment_tb.v
+	module worklib.pipe_ex2:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+irun: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+irun: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+ncelab: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		pipe2_test
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+ncvlog_cg: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+		worklib.pipe2_test:v <0x708b8b6b>
+			streams:  12, words: 13024
+		worklib.pipe_ex2:v <0x4068aa6c>
+			streams:  16, words:  9402
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           20      20
+		Scalar wires:         2       -
+		Vectored wires:       6       -
+		Always blocks:        4       4
+		Initial blocks:       4       4
+		Cont. assignments:    0       1
+		Pseudo assignments:   7       7
+	Writing initial simulation snapshot: worklib.pipe2_test:v
+define worklib /home/adld25/Ass_two/INCA_libs/worklib
+|
+ncsim: *W,DLCPTH (./cds.lib,1): cds.lib Permission denied '/home/adld25/Ass_two/INCA_libs/worklib' (cds.lib command ignored).
+Loading snapshot worklib.pipe2_test:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Time:   0, F=   x
+Time:  27, F=   8
+Time:  47, F=  24
+Time:  67, F=   3
+Time:  87, F=  14
+Time: 107, F=   3
+Time: 127, F=  38
+mem[125] =   8
+mem[126] =  24
+mem[127] =  14
+mem[128] =   3
+mem[129] =   3
+mem[130] =  38
+Simulation complete via $finish(1) at time 300 NS + 0
+./Assignment_tb.v:40        #300 $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 26, 2022 at 10:45:05 IST  (total: 00:00:01)
