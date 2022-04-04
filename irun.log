@@ -1,8 +1,8 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Dec 02, 2021 at 16:20:36 IST
+TOOL:	irun(64)	15.20-s051: Started on Dec 02, 2021 at 17:03:33 IST
 irun
 	-access +rwc
-	decoder_tb.v
+	encoder_tb.v
 INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
 |
 irun: *W,DLCVAR (/home/adld11/cds.lib,6): cds.lib Invalid environment variable ''.
@@ -153,10 +153,8 @@ ncvlog: *W,DLCVAR (/home/adld11/cds.lib,42): cds.lib Invalid environment variabl
 DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
 |
 ncvlog: *W,DLCVAR (/home/adld11/cds.lib,67): cds.lib Invalid environment variable ''.
-file: decoder_tb.v
-	module worklib.decoder:v
-		errors: 0, warnings: 0
-	module worklib.decoder_tb:v
+file: encoder_tb.v
+	module worklib.encoder:v
 		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 8
@@ -238,7 +236,7 @@ ncelab: *W,DLCVAR (/home/adld11/cds.lib,67): cds.lib Invalid environment variabl
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		decoder_tb
+		encoder_tb
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
 INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
@@ -266,10 +264,10 @@ ncvlog_cg: *W,DLCVAR (/home/adld11/cds.lib,42): cds.lib Invalid environment vari
 DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
 |
 ncvlog_cg: *W,DLCVAR (/home/adld11/cds.lib,67): cds.lib Invalid environment variable ''.
-		worklib.decoder:v <0x73eea77f>
-			streams:   1, words:  1305
-		worklib.decoder_tb:v <0x6fc1c07b>
-			streams:   3, words:  5102
+		worklib.encoder:v <0x2aaa5692>
+			streams:   1, words:  1761
+		worklib.encoder_tb:v <0x3a86e4b2>
+			streams:   3, words:  4990
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -280,7 +278,7 @@ ncvlog_cg: *W,DLCVAR (/home/adld11/cds.lib,67): cds.lib Invalid environment vari
 		Always blocks:       1       1
 		Initial blocks:      1       1
 		Pseudo assignments:  1       1
-	Writing initial simulation snapshot: worklib.decoder_tb:v
+	Writing initial simulation snapshot: worklib.encoder_tb:v
 INCLUDE $GF_PDK_HOME/DesignEnv/VirtuosoOA/setup/superstack.cds.lib
 |
 ncsim: *W,DLCVAR (/home/adld11/cds.lib,6): cds.lib Invalid environment variable ''.
@@ -306,17 +304,17 @@ ncsim: *W,DLCVAR (/home/adld11/cds.lib,42): cds.lib Invalid environment variable
 DEFINE asap7ssc7p5t $PDK_DIR/asap7ssc7p5t_05
 |
 ncsim: *W,DLCVAR (/home/adld11/cds.lib,67): cds.lib Invalid environment variable ''.
-Loading snapshot worklib.decoder_tb:v .................... Done
+Loading snapshot worklib.encoder_tb:v .................... Done
 ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
 ncsim> run
-                   0in =000 out=00000001
-                   5in =001 out=00000010
-                  10in =010 out=00000100
-                  15in =011 out=00001000
-                  20in =100 out=00010000
-                  25in =101 out=00100000
-                  30in =110 out=01000000
-                  35in =111 out=10000000
+                   0in=00000001 out=000
+                   5in=00000010 out=001
+                  10in=00000100 out=010
+                  15in=00001000 out=011
+                  20in=00010000 out=100
+                  25in=00100000 out=101
+                  30in=01000000 out=110
+                  35in=10000000 out=111
 ncsim: *W,RNQUIE: Simulation is complete.
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Dec 02, 2021 at 16:20:48 IST  (total: 00:00:12)
+TOOL:	irun(64)	15.20-s051: Exiting on Dec 02, 2021 at 17:03:34 IST  (total: 00:00:01)
